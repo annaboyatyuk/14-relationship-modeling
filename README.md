@@ -6,12 +6,15 @@
 
 
 ## Links
-* PR 
+* PR https://github.com/annaboyatyuk/14-relationship-modeling/pull/2 
 * Heroku https://lab14relationshipmodeling401.herokuapp.com/
 * Travis https://travis-ci.com/annaboyatyuk/14-relationship-modeling/builds
 
 
 ## Configure
+test the GET POST PUT DELETE requests in postman.
+/api/v1/coffee
+/api/v1/parks
 
 
 ## Requirements
