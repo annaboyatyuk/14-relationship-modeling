@@ -6,4 +6,4 @@ const ParksSchema = mongoose.Schema({
   location: {type: String},
 });
 
-export default ('parks', ParksSchema);
+export default mongoose.model('parks', ParksSchema);

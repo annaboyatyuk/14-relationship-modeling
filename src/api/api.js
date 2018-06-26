@@ -24,6 +24,7 @@ router.get('/', (req, res) => {
 
 router.get('/api/v1/:model', (req, res, next) => {
   req.model.find({})
+    .populate('park')
     .then(data => sendJSON(res, data))
     .catch(next);
 });
@@ -31,6 +32,7 @@ router.get('/api/v1/:model', (req, res, next) => {
 router.get('/api/v1/:model/:id', (req, res, next) => {
   if(req.params.id) {
     req.model.findById(req.params.id)
+      .populate('park')
       .then(data => sendJSON(res, data))
       .catch(next);
   }

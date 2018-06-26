@@ -6,7 +6,7 @@ const CoffeeSchema = mongoose.Schema({
   name: {type:String, required:true},
   roast: {type:String, required:true},
   coffee: {type:String, required:true},
-  parks: {type: Schema.Types.ObjectId, ref: 'Parks'},
+  park: {type: Schema.Types.ObjectId, ref: 'parks'},
 });
 
 export default mongoose.model('coffee', CoffeeSchema);

@@ -1,6 +1,7 @@
 'use strict';
 
 import coffee from '../src/models/coffee';
+import parks from '../src/models/parks';
 
 export default (dir) => {
 
@@ -18,5 +19,6 @@ export default (dir) => {
   return {
     'foo': {default: fakeMongo},
     'coffee': {default: coffee},
+    'parks': {default: parks},
   };
 };
